@@ -54,8 +54,8 @@ all: main-build
 main-build: GPIO.elf secondary-outputs
 
 # Tool invocations
-GPIO.elf: $(OBJS) $(USER_OBJS) D:\Git\STM32Cube\ Tutorial\GPIO\STM32L476RGTX_FLASH.ld
-	arm-none-eabi-gcc -o "GPIO.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Git\STM32Cube Tutorial\GPIO\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+GPIO.elf: $(OBJS) $(USER_OBJS) D:\Git\STM32Cube\ Tutorial\STM32CubeIDE-Tutorail\GPIO\STM32L476RGTX_FLASH.ld
+	arm-none-eabi-gcc -o "GPIO.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Git\STM32Cube Tutorial\STM32CubeIDE-Tutorail\GPIO\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
