@@ -1,17 +1,17 @@
-22:22:09 **** Incremental Build of configuration Debug for project GPIO ****
+01:45:00 **** Incremental Build of configuration Debug for project PressureMeter ****
 make -j6 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "GPIO.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Git\STM32Cube Tutorial\STM32CubeIDE-Tutorail\GPIO\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: GPIO.elf
+arm-none-eabi-gcc -o "PressureMeter.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Git\Firmware Project\PressureMeter\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PressureMeter.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PressureMeter.elf
  
-arm-none-eabi-objdump -h -S  GPIO.elf  > "GPIO.list"
-arm-none-eabi-objcopy  -O binary  GPIO.elf  "GPIO.bin"
-arm-none-eabi-size   GPIO.elf 
+arm-none-eabi-objdump -h -S  PressureMeter.elf  > "PressureMeter.list"
+arm-none-eabi-objcopy  -O binary  PressureMeter.elf  "PressureMeter.bin"
+arm-none-eabi-size   PressureMeter.elf 
    text	   data	    bss	    dec	    hex	filename
-   6132	     20	   1572	   7724	   1e2c	GPIO.elf
+  71200	    500	   2216	  73916	  120bc	PressureMeter.elf
 Finished building: default.size.stdout
  
-Finished building: GPIO.bin
-Finished building: GPIO.list
+Finished building: PressureMeter.bin
  
+Finished building: PressureMeter.list
  

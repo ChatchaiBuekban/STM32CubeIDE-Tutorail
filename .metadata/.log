@@ -502,3 +502,24 @@ java.lang.Exception: The project description file (.project) for 'PressureMeter'
 
 !ENTRY org.eclipse.cdt.core 1 0 2564-01-10 22:19:12.594
 !MESSAGE Indexed 'GPIO' (17 sources, 59 headers) in 1.83 sec: 7,724 declarations; 38,244 references; 3 unresolved inclusions; 45 syntax errors; 169 unresolved names (0.37%)
+!SESSION 2564-01-14 01:28:23.350 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2564-01-14 01:28:36.734
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2564-01-14 01:28:36.825
+!MESSAGE Log4j initialized with config file D:\Git\STM32Cube Tutorial\STM32CubeIDE-Tutorail\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2564-01-14 01:28:49.677
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2564-01-14 01:28:50.279
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2564-01-14 01:29:07.962
+!MESSAGE Indexed 'PressureMeter' (30 sources, 117 headers) in 4.13 sec: 11,255 declarations; 53,910 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.26%)
